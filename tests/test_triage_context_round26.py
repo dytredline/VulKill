@@ -428,5 +428,5 @@ class DynamicValueMaskingTests(unittest.TestCase):
     def test_literal_secrets_masked(self):
         from ai_triage import MASK, redact_text
         for text in ("PASSWORD = 'hunter22'", "password = 'pa$Sword1'", "password = 'abc?def'",
-                     'app.secret_key = "aeZ1iwoh2ree2mo0Eereireong4baitixaixu5Ee"'):
+                     "app.secret_key = 'public unit test input'"):
             self.assertIn(MASK, redact_text(text), text)
