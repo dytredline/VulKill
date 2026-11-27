@@ -66,6 +66,20 @@ This directory contains **46 verified security advisories (45 original vulnerabi
 
 ---
 
+## Spotify / Backstage Findings Found by VulKill (47–51)
+
+These records document five Spotify/Backstage findings found by VulKill in isolated local runtime tests and map each record to the corresponding public upstream advisory. They are listed separately from the 46-record collection above.
+
+| # | VulKill finding | Component | Public upstream advisory |
+| :-: | :--- | :--- | :--- |
+| **47** | [TechDocs static authorization bypass](47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) |
+| **48** | [Kubernetes secret disclosure](48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) |
+| **49** | [Kubernetes session-credential forwarding](49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) |
+| **50** | [GitHub URL reader encoded traversal](50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) |
+| **51** | [Catalog `validate-entity` local file read](51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) |
+
+---
+
 ## 2. Quick Local Verification & Execution Commands for All 46 Advisories
 
 You can verify both the **VulKill static analysis (SAST/IaC)** detections and the **isolated local runtime proofs (`RED -> GREEN + BENIGN`)** for all 46 advisories with the following commands:

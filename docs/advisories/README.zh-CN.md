@@ -66,6 +66,20 @@
 
 ---
 
+## VulKill 发现的 Spotify / Backstage 发现项 (47–51)
+
+本表记录 VulKill 在隔离的本地运行时测试中发现的五项 Spotify/Backstage 问题，并将每项记录关联到公开的上游安全公告；它们与上方46项记录分开列出。
+
+| # | VulKill 发现项 | 组件 | 公开上游安全公告 |
+| :-: | :--- | :--- | :--- |
+| **47** | [TechDocs 静态内容授权绕过](zh-CN/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) |
+| **48** | [Kubernetes 密钥泄露](zh-CN/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) |
+| **49** | [Kubernetes 会话凭据转发](zh-CN/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) |
+| **50** | [GitHub URL 读取器编码路径穿越](zh-CN/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) |
+| **51** | [Catalog `validate-entity` 本地文件读取](zh-CN/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) |
+
+---
+
 ## 2. 本地快速验证与执行全部 11 项安全公告的命令
 
 您可以通过以下命令同时验证全部 11 项安全漏洞的 **VulKill 静态分析（SAST/IaC）检测结果** 与 **本地隔离运行时证明（`RED -> GREEN + BENIGN`）**：

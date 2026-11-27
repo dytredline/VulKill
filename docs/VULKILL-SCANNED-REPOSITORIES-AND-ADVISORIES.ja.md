@@ -3475,4 +3475,14 @@ git apply --check /home/community-user/targets/vercel-bounty-audit-20261027/patc
 }
 ```
 
+## VulKill が見つけた Spotify / Backstage の所見 (47–51)
+
+以下は、隔離されたローカルのランタイムテストで VulKill が見つけた Spotify/Backstage の所見と、対応する公開上流アドバイザリです。
+
+- [47 — TechDocs 静的コンテンツの認可回避](advisories/ja/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) — `GHSA-rg9r-hr7g-5gc2`
+- [48 — Kubernetes シークレット露出](advisories/ja/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf`
+- [49 — Kubernetes セッション資格情報の転送](advisories/ja/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) — `GHSA-27gw-fw83-xfpp`
+- [50 — GitHub URL リーダーのエンコード済みパストラバーサル](advisories/ja/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) — `GHSA-fp7g-2pw8-726f`
+- [51 — Catalog `validate-entity` のローカルファイル読み取り](advisories/ja/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) — `GHSA-h8rc-g67j-87x3`
+
 <!-- VERCEL-ADVISORIES-END -->

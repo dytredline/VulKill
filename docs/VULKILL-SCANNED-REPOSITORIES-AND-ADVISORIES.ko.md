@@ -3453,4 +3453,14 @@ git apply --check /home/community-user/targets/vercel-bounty-audit-20261027/patc
 }
 ```
 
+## VulKill이 찾은 Spotify / Backstage 발견 항목 (47–51)
+
+다음 기록은 격리된 로컬 런타임 테스트에서 VulKill이 찾은 Spotify/Backstage 발견 항목을 해당 공개 업스트림 보안 권고와 함께 제공합니다.
+
+- [47 — TechDocs 정적 콘텐츠 권한 우회](advisories/ko/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) — `GHSA-rg9r-hr7g-5gc2`
+- [48 — Kubernetes 시크릿 노출](advisories/ko/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf`
+- [49 — Kubernetes 세션 자격 증명 전달](advisories/ko/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) — `GHSA-27gw-fw83-xfpp`
+- [50 — GitHub URL 리더 인코딩 경로 순회](advisories/ko/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) — `GHSA-fp7g-2pw8-726f`
+- [51 — Catalog `validate-entity` 로컬 파일 읽기](advisories/ko/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) — `GHSA-h8rc-g67j-87x3`
+
 <!-- VERCEL-ADVISORIES-END -->
