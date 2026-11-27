@@ -3475,14 +3475,18 @@ git apply --check /home/community-user/targets/vercel-bounty-audit-20261027/patc
 }
 ```
 
-## VulKill が見つけた Spotify / Backstage の所見 (47–51)
+## VulKill が見つけた Spotify / Backstage の所見 (47–55)
 
-以下は、隔離されたローカルのランタイムテストで VulKill が見つけた Spotify/Backstage の所見と、対応する公開上流アドバイザリです。
+以下は、隔離ローカル実行テストで VulKill が見つけた Spotify/Backstage および Spotify SDK の全9件です。完全一致する公開 upstream advisory はリンクし、残りは VulKill audit ID を保持します。
 
 - [47 — TechDocs 静的コンテンツの認可回避](advisories/ja/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) — `GHSA-rg9r-hr7g-5gc2`
-- [48 — Kubernetes シークレット露出](advisories/ja/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf`
+- [48 — Kubernetes secret 露出と関連 GitHub Events cache](advisories/ja/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf` + `NEW-BS-07A`
 - [49 — Kubernetes セッション資格情報の転送](advisories/ja/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) — `GHSA-27gw-fw83-xfpp`
 - [50 — GitHub URL リーダーのエンコード済みパストラバーサル](advisories/ja/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) — `GHSA-fp7g-2pw8-726f`
 - [51 — Catalog `validate-entity` のローカルファイル読み取り](advisories/ja/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) — `GHSA-h8rc-g67j-87x3`
+- [52 — Scaffolder workspace／container image 境界](advisories/ja/52-SPOTIFY-BACKSTAGE-SCAFFOLDER-WORKSPACE-AND-CONTAINER-BOUNDARIES.md) — `NEW-BS-05`
+- [53 — サインインドメイン／Azure EasyAuth JWT 境界](advisories/ja/53-SPOTIFY-BACKSTAGE-AUTH-DOMAIN-AND-EASYAUTH-JWT-BOUNDARIES.md) — `NEW-BS-06`
+- [54 — Web API TypeScript SDK path parameter 境界](advisories/ja/54-SPOTIFY-WEB-API-TS-SDK-PATH-PARAMETER-BOUNDARIES.md) — `NEW-SDK-01`
+- [55 — SDK OAuth／PKCE／session token 境界](advisories/ja/55-SPOTIFY-SDK-OAUTH-PKCE-AND-SESSION-TOKEN-BOUNDARIES.md) — `NEW-SDK-02`
 
 <!-- VERCEL-ADVISORIES-END -->

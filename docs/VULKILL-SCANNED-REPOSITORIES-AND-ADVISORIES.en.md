@@ -3735,14 +3735,18 @@ git apply --check /home/community-user/targets/vercel-bounty-audit-20261027/patc
 }
 ```
 
-## Spotify / Backstage Findings Found by VulKill (47–51)
+## Spotify / Backstage Findings Found by VulKill (47–55)
 
-The following records describe Spotify/Backstage findings found by VulKill in isolated local runtime tests and link them to the corresponding public upstream advisories:
+The following records describe all nine Spotify/Backstage and Spotify SDK findings found by VulKill in isolated local runtime tests. Exact public upstream advisories are linked where available; the remaining records retain their VulKill audit identifiers:
 
 - [47 — TechDocs static authorization bypass](advisories/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) — `GHSA-rg9r-hr7g-5gc2`
-- [48 — Kubernetes secret disclosure](advisories/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf`
+- [48 — Kubernetes secret disclosure and related GitHub Events cache observation](advisories/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf` + `NEW-BS-07A`
 - [49 — Kubernetes session-credential forwarding](advisories/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) — `GHSA-27gw-fw83-xfpp`
 - [50 — GitHub URL reader encoded traversal](advisories/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) — `GHSA-fp7g-2pw8-726f`
 - [51 — Catalog `validate-entity` local file read](advisories/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) — `GHSA-h8rc-g67j-87x3`
+- [52 — Scaffolder workspace and container-image boundaries](advisories/52-SPOTIFY-BACKSTAGE-SCAFFOLDER-WORKSPACE-AND-CONTAINER-BOUNDARIES.md) — `NEW-BS-05`
+- [53 — Sign-in domain and Azure EasyAuth JWT boundaries](advisories/53-SPOTIFY-BACKSTAGE-AUTH-DOMAIN-AND-EASYAUTH-JWT-BOUNDARIES.md) — `NEW-BS-06`
+- [54 — Web API TypeScript SDK path-parameter boundaries](advisories/54-SPOTIFY-WEB-API-TS-SDK-PATH-PARAMETER-BOUNDARIES.md) — `NEW-SDK-01`
+- [55 — SDK OAuth, PKCE, and session-token boundaries](advisories/55-SPOTIFY-SDK-OAUTH-PKCE-AND-SESSION-TOKEN-BOUNDARIES.md) — `NEW-SDK-02`
 
 <!-- VERCEL-ADVISORIES-END -->

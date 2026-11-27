@@ -66,17 +66,21 @@
 
 ---
 
-## VulKill が見つけた Spotify / Backstage の所見 (47–51)
+## VulKill が見つけた Spotify / Backstage の所見 (47–55)
 
-この一覧は、隔離されたローカルのランタイムテストで VulKill が見つけた5件の Spotify/Backstage の所見を、公開されている上流アドバイザリに対応付けたものです。上記の46件とは別に掲載しています。
+この一覧は、隔離ローカル実行テストで VulKill が見つけた Spotify/Backstage および Spotify SDK の全9件を記録します。完全に一致する公開 upstream advisory がある場合はリンクし、残りは無関係な advisory を割り当てず VulKill audit ID を使用します。上記46件とは別に掲載します。
 
-| # | VulKill の所見 | コンポーネント | 公開上流アドバイザリ |
+| # | VulKill の所見 | コンポーネント | 公開 upstream advisory / VulKill 記録 |
 | :-: | :--- | :--- | :--- |
-| **47** | [TechDocs 静的コンテンツの認可回避](ja/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) |
-| **48** | [Kubernetes シークレット露出](ja/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) |
-| **49** | [Kubernetes セッション資格情報の転送](ja/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) |
-| **50** | [GitHub URL リーダーのエンコード済みパストラバーサル](ja/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) |
-| **51** | [Catalog `validate-entity` のローカルファイル読み取り](ja/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) |
+| **47** | [TechDocs 静的コンテンツの認可回避](ja/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) + `NEW-BS-02` |
+| **48** | [Kubernetes secret 露出と関連 GitHub Events cache](ja/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend`, GitHub Events | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) (Kubernetes) + `NEW-BS-07A` / `NEW-BS-07B` |
+| **49** | [Kubernetes セッション資格情報の転送](ja/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) + `NEW-BS-01` |
+| **50** | [GitHub URL リーダーのエンコード済みパストラバーサル](ja/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) + `NEW-BS-03` |
+| **51** | [Catalog `validate-entity` のローカルファイル読み取り](ja/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) + `NEW-BS-04` |
+| **52** | [Scaffolder workspace／container image 境界](ja/52-SPOTIFY-BACKSTAGE-SCAFFOLDER-WORKSPACE-AND-CONTAINER-BOUNDARIES.md) | Backstage Scaffolder | `NEW-BS-05` |
+| **53** | [サインインドメイン／Azure EasyAuth JWT 境界](ja/53-SPOTIFY-BACKSTAGE-AUTH-DOMAIN-AND-EASYAUTH-JWT-BOUNDARIES.md) | Backstage auth / gateway | `NEW-BS-06` |
+| **54** | [Web API TypeScript SDK path parameter 境界](ja/54-SPOTIFY-WEB-API-TS-SDK-PATH-PARAMETER-BOUNDARIES.md) | `spotify-web-api-ts-sdk` | `NEW-SDK-01` |
+| **55** | [SDK OAuth／PKCE／session token 境界](ja/55-SPOTIFY-SDK-OAUTH-PKCE-AND-SESSION-TOKEN-BOUNDARIES.md) | Spotify OSS SDK / examples | `NEW-SDK-02` |
 
 ---
 

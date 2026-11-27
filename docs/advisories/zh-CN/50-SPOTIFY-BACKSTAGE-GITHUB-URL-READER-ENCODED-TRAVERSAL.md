@@ -3,6 +3,7 @@
 [English](../50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | [Türkçe](../tr/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | [日本語](../ja/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | **简体中文** | [한국어](../ko/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md)
 
 **VulKill 发现：**在 Spotify/Backstage 审计中发现，并于 2026-11-01 的本地运行测试中观察到；上游公告于 2026-11-27 发布。
+**VulKill 审计编号：**`NEW-BS-03`。
 **上游：**[`GHSA-fp7g-2pw8-726f`](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) · CVSS 3.1 `7.7 High` · `CWE-22` / `CWE-200`。
 
 ## 1. 形成机制

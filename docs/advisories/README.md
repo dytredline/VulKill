@@ -66,17 +66,21 @@ This directory contains **46 verified security advisories (45 original vulnerabi
 
 ---
 
-## Spotify / Backstage Findings Found by VulKill (47–51)
+## Spotify / Backstage Findings Found by VulKill (47–55)
 
-These records document five Spotify/Backstage findings found by VulKill in isolated local runtime tests and map each record to the corresponding public upstream advisory. They are listed separately from the 46-record collection above.
+These records document all nine Spotify/Backstage and Spotify SDK findings found by VulKill in isolated local runtime tests. Where an exact public upstream advisory exists it is linked; the remaining records retain their VulKill audit identifiers without assigning an unrelated advisory. They are listed separately from the 46-record collection above.
 
-| # | VulKill finding | Component | Public upstream advisory |
+| # | VulKill finding | Component | Public upstream advisory / VulKill record |
 | :-: | :--- | :--- | :--- |
-| **47** | [TechDocs static authorization bypass](47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) |
-| **48** | [Kubernetes secret disclosure](48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) |
-| **49** | [Kubernetes session-credential forwarding](49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) |
-| **50** | [GitHub URL reader encoded traversal](50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) |
-| **51** | [Catalog `validate-entity` local file read](51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) |
+| **47** | [TechDocs static authorization bypass](47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) + `NEW-BS-02` |
+| **48** | [Kubernetes secret disclosure and related GitHub Events cache observation](48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend`, GitHub Events | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) (Kubernetes) + `NEW-BS-07A` / `NEW-BS-07B` |
+| **49** | [Kubernetes session-credential forwarding](49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) + `NEW-BS-01` |
+| **50** | [GitHub URL reader encoded traversal](50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) + `NEW-BS-03` |
+| **51** | [Catalog `validate-entity` local file read](51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) + `NEW-BS-04` |
+| **52** | [Scaffolder workspace and container-image boundaries](52-SPOTIFY-BACKSTAGE-SCAFFOLDER-WORKSPACE-AND-CONTAINER-BOUNDARIES.md) | Backstage Scaffolder | `NEW-BS-05` |
+| **53** | [Sign-in domain and Azure EasyAuth JWT boundaries](53-SPOTIFY-BACKSTAGE-AUTH-DOMAIN-AND-EASYAUTH-JWT-BOUNDARIES.md) | Backstage auth / gateway | `NEW-BS-06` |
+| **54** | [Web API TypeScript SDK path-parameter boundaries](54-SPOTIFY-WEB-API-TS-SDK-PATH-PARAMETER-BOUNDARIES.md) | `spotify-web-api-ts-sdk` | `NEW-SDK-01` |
+| **55** | [SDK OAuth, PKCE, and session-token boundaries](55-SPOTIFY-SDK-OAUTH-PKCE-AND-SESSION-TOKEN-BOUNDARIES.md) | Spotify OSS SDKs / examples | `NEW-SDK-02` |
 
 ---
 

@@ -3,6 +3,7 @@
 [English](../50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | **Türkçe** | [日本語](../ja/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | [简体中文](../zh-CN/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | [한국어](../ko/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md)
 
 **VulKill bulgusu:** Spotify/Backstage denetiminde bulundu ve 2026-11-01 tarihinde yerel çalışma zamanı testlerinde gözlendi; üst akış duyurusu 2026-11-27 tarihinde yayımlandı.
+**VulKill denetim kimliği:** `NEW-BS-03`.
 **Üst akış:** [`GHSA-fp7g-2pw8-726f`](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) · CVSS 3.1 `7.7 High` · `CWE-22` / `CWE-200`.
 
 ## 1. Kod Kusurunun Güvenlik Açığına Dönüşmesi

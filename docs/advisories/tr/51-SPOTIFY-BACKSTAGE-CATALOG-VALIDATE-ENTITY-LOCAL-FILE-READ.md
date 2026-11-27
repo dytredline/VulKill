@@ -3,6 +3,7 @@
 [English](../51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | **Türkçe** | [日本語](../ja/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | [简体中文](../zh-CN/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | [한국어](../ko/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md)
 
 **VulKill bulgusu:** Spotify/Backstage denetiminde bulundu ve 2026-11-01 tarihinde yerel çalışma zamanı testlerinde gözlendi; üst akış duyurusu 2026-11-18 tarihinde yayımlandı.
+**VulKill denetim kimliği:** `NEW-BS-04`.
 **Üst akış:** [`GHSA-h8rc-g67j-87x3`](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) · CVSS 3.1 `6.5 Medium` · `CWE-200` / `CWE-863`.
 
 ## 1. Kod Kusurunun Güvenlik Açığına Dönüşmesi

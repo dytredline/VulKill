@@ -3,6 +3,7 @@
 [English](../47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [Türkçe](../tr/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | **日本語** | [简体中文](../zh-CN/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [한국어](../ko/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md)
 
 **VulKill の発見:** Spotify/Backstage 監査で見つかり、2026-11-01 に実際の upstream モジュールを用いたローカル実行テストで挙動を観測しました。Upstream advisory は 2026-08-28 に公開済みでした。
+**VulKill audit ID:** `NEW-BS-02`。
 **Upstream:** [`GHSA-rg9r-hr7g-5gc2`](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) · `CVE-2026-106489` · CVSS 3.1 `6.5 Medium` · `CWE-862`。
 
 ## 1. 仕組み
