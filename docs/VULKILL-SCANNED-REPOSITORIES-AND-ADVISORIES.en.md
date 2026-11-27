@@ -3735,4 +3735,14 @@ git apply --check /home/community-user/targets/vercel-bounty-audit-20261027/patc
 }
 ```
 
+## Spotify / Backstage Findings Found by VulKill (47–51)
+
+The following records describe Spotify/Backstage findings found by VulKill in isolated local runtime tests and link them to the corresponding public upstream advisories:
+
+- [47 — TechDocs static authorization bypass](advisories/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) — `GHSA-rg9r-hr7g-5gc2`
+- [48 — Kubernetes secret disclosure](advisories/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf`
+- [49 — Kubernetes session-credential forwarding](advisories/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) — `GHSA-27gw-fw83-xfpp`
+- [50 — GitHub URL reader encoded traversal](advisories/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) — `GHSA-fp7g-2pw8-726f`
+- [51 — Catalog `validate-entity` local file read](advisories/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) — `GHSA-h8rc-g67j-87x3`
+
 <!-- VERCEL-ADVISORIES-END -->

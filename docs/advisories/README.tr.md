@@ -66,6 +66,20 @@ Bu dizin, **VulKill** statik/dinamik analiz motoru ile yürüttüğümüz güven
 
 ---
 
+## VulKill ile Bulunan Spotify / Backstage Bulguları (47–51)
+
+Bu kayıtlar, VulKill'in izole yerel çalışma zamanı testlerinde bulduğu beş Spotify/Backstage bulgusunu açık üst akış güvenlik kaydıyla eşleştirir. Yukarıdaki 46 kayıttan ayrı listelenir.
+
+| # | VulKill bulgusu | Bileşen | Açık üst akış kaydı |
+| :-: | :--- | :--- | :--- |
+| **47** | [TechDocs statik içerik yetkilendirme atlaması](tr/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) |
+| **48** | [Kubernetes gizli veri ifşası](tr/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) |
+| **49** | [Kubernetes oturum kimlik bilgisi yönlendirmesi](tr/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) |
+| **50** | [GitHub URL okuyucu kodlanmış yol geçişi](tr/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) |
+| **51** | [Catalog `validate-entity` yerel dosya okuması](tr/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) |
+
+---
+
 ## 2. Tüm 46 Kaydı Yerel Ortamda Doğrulama ve Çalıştırma Komutları
 
 Aşağıdaki komutlarla tüm 46 güvenlik kaydı (45 özgün açık + 1 üst akış duplicate)nın hem **VulKill statik analiz (SAST/IaC)** tespitlerini hem de **izole yerel çalışma zamanı kanıtlarını (`RED -> GREEN + BENIGN`)** tek komutla doğrulayabilirsiniz:

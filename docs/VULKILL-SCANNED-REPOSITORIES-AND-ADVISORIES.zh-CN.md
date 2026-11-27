@@ -3465,4 +3465,14 @@ git apply --check /home/community-user/targets/vercel-bounty-audit-20261027/patc
 }
 ```
 
+## VulKill 发现的 Spotify / Backstage 发现项 (47–51)
+
+以下记录介绍 VulKill 在隔离的本地运行时测试中发现的 Spotify/Backstage 问题，并链接到相应的公开上游安全公告：
+
+- [47 — TechDocs 静态内容授权绕过](advisories/zh-CN/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) — `GHSA-rg9r-hr7g-5gc2`
+- [48 — Kubernetes 密钥泄露](advisories/zh-CN/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf`
+- [49 — Kubernetes 会话凭据转发](advisories/zh-CN/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) — `GHSA-27gw-fw83-xfpp`
+- [50 — GitHub URL 读取器编码路径穿越](advisories/zh-CN/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) — `GHSA-fp7g-2pw8-726f`
+- [51 — Catalog `validate-entity` 本地文件读取](advisories/zh-CN/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) — `GHSA-h8rc-g67j-87x3`
+
 <!-- VERCEL-ADVISORIES-END -->
