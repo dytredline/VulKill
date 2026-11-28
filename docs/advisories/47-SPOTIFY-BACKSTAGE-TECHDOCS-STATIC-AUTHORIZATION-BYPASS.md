@@ -3,6 +3,7 @@
 **English** | [Türkçe](tr/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [日本語](ja/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [简体中文](zh-CN/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [한국어](ko/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md)
 
 **VulKill finding:** Found during the Spotify/Backstage audit and observed against the real upstream modules in local runtime tests on 2026-11-01. The upstream advisory had been published on 2026-08-28.
+**VulKill audit identifier:** `NEW-BS-02`.
 **Upstream:** [`GHSA-rg9r-hr7g-5gc2`](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) · `CVE-2026-106489` · CVSS 3.1 `6.5 Medium` · `CWE-862`.
 
 ## 1. How the Code Defect Becomes a Vulnerability

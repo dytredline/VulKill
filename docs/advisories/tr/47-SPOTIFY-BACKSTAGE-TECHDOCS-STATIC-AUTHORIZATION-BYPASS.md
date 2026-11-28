@@ -3,6 +3,7 @@
 [English](../47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | **Türkçe** | [日本語](../ja/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [简体中文](../zh-CN/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [한국어](../ko/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md)
 
 **VulKill bulgusu:** Spotify/Backstage denetiminde bulundu ve 2026-11-01 tarihinde gerçek üst akış modülleriyle yerel çalışma zamanı testlerinde gözlendi. Üst akış duyurusu 2026-08-28 tarihinde yayımlanmıştı.
+**VulKill denetim kimliği:** `NEW-BS-02`.
 **Üst akış:** [`GHSA-rg9r-hr7g-5gc2`](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) · `CVE-2026-106489` · CVSS 3.1 `6.5 Medium` · `CWE-862`.
 
 ## 1. Kod Kusurunun Güvenlik Açığına Dönüşmesi

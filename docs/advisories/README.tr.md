@@ -66,17 +66,21 @@ Bu dizin, **VulKill** statik/dinamik analiz motoru ile yürüttüğümüz güven
 
 ---
 
-## VulKill ile Bulunan Spotify / Backstage Bulguları (47–51)
+## VulKill ile Bulunan Spotify / Backstage Bulguları (47–55)
 
-Bu kayıtlar, VulKill'in izole yerel çalışma zamanı testlerinde bulduğu beş Spotify/Backstage bulgusunu açık üst akış güvenlik kaydıyla eşleştirir. Yukarıdaki 46 kayıttan ayrı listelenir.
+Bu kayıtlar, VulKill'in izole yerel çalışma zamanı testlerinde bulduğu dokuz Spotify/Backstage ve Spotify SDK bulgusunun tamamını belgeler. Birebir açık üst akış güvenlik kaydı bulunanlar ona bağlanır; diğerleri ilgisiz kayıt atanmadan VulKill denetim kimliğiyle sunulur. Yukarıdaki 46 kayıttan ayrı listelenir.
 
-| # | VulKill bulgusu | Bileşen | Açık üst akış kaydı |
+| # | VulKill bulgusu | Bileşen | Açık üst akış kaydı / VulKill kaydı |
 | :-: | :--- | :--- | :--- |
-| **47** | [TechDocs statik içerik yetkilendirme atlaması](tr/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) |
-| **48** | [Kubernetes gizli veri ifşası](tr/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) |
-| **49** | [Kubernetes oturum kimlik bilgisi yönlendirmesi](tr/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) |
-| **50** | [GitHub URL okuyucu kodlanmış yol geçişi](tr/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) |
-| **51** | [Catalog `validate-entity` yerel dosya okuması](tr/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) |
+| **47** | [TechDocs statik içerik yetkilendirme atlaması](tr/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) + `NEW-BS-02` |
+| **48** | [Kubernetes gizli veri ifşası ve ilişkili GitHub Events önbellek gözlemi](tr/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend`, GitHub Events | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) (Kubernetes) + `NEW-BS-07A` / `NEW-BS-07B` |
+| **49** | [Kubernetes oturum kimlik bilgisi yönlendirmesi](tr/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) + `NEW-BS-01` |
+| **50** | [GitHub URL okuyucu kodlanmış yol geçişi](tr/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) + `NEW-BS-03` |
+| **51** | [Catalog `validate-entity` yerel dosya okuması](tr/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) + `NEW-BS-04` |
+| **52** | [Scaffolder çalışma alanı ve konteyner imajı sınırları](tr/52-SPOTIFY-BACKSTAGE-SCAFFOLDER-WORKSPACE-AND-CONTAINER-BOUNDARIES.md) | Backstage Scaffolder | `NEW-BS-05` |
+| **53** | [Oturum açma alan adı ve Azure EasyAuth JWT sınırları](tr/53-SPOTIFY-BACKSTAGE-AUTH-DOMAIN-AND-EASYAUTH-JWT-BOUNDARIES.md) | Backstage auth / gateway | `NEW-BS-06` |
+| **54** | [Web API TypeScript SDK yol parametresi sınırları](tr/54-SPOTIFY-WEB-API-TS-SDK-PATH-PARAMETER-BOUNDARIES.md) | `spotify-web-api-ts-sdk` | `NEW-SDK-01` |
+| **55** | [SDK OAuth, PKCE ve oturum token'ı sınırları](tr/55-SPOTIFY-SDK-OAUTH-PKCE-AND-SESSION-TOKEN-BOUNDARIES.md) | Spotify açık kaynak SDK'ları / örnekleri | `NEW-SDK-02` |
 
 ---
 

@@ -3,6 +3,7 @@
 **English** | [Türkçe](tr/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | [日本語](ja/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | [简体中文](zh-CN/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | [한국어](ko/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md)
 
 **VulKill finding:** Found during the Spotify/Backstage audit and observed in local runtime tests on 2026-11-01, before the upstream publication on 2026-11-18.
+**VulKill audit identifier:** `NEW-BS-01`.
 **Upstream:** [`GHSA-27gw-fw83-xfpp`](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) · CVSS 3.1 `6.4 Medium` · `CWE-200` / `CWE-441`.
 
 ## 1. How the Code Defect Becomes a Vulnerability

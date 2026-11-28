@@ -3465,14 +3465,18 @@ git apply --check /home/community-user/targets/vercel-bounty-audit-20261027/patc
 }
 ```
 
-## VulKill 发现的 Spotify / Backstage 发现项 (47–51)
+## VulKill 发现的 Spotify / Backstage 发现项 (47–55)
 
-以下记录介绍 VulKill 在隔离的本地运行时测试中发现的 Spotify/Backstage 问题，并链接到相应的公开上游安全公告：
+以下记录包含 VulKill 在隔离本地运行时测试中发现的全部九项 Spotify/Backstage 与 Spotify SDK 问题。存在完全对应的公开上游安全公告时提供链接；其余保留 VulKill 审计编号：
 
 - [47 — TechDocs 静态内容授权绕过](advisories/zh-CN/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) — `GHSA-rg9r-hr7g-5gc2`
-- [48 — Kubernetes 密钥泄露](advisories/zh-CN/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf`
+- [48 — Kubernetes 密钥泄露及相关 GitHub Events cache](advisories/zh-CN/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) — `GHSA-p795-mqf2-36mf` + `NEW-BS-07A`
 - [49 — Kubernetes 会话凭据转发](advisories/zh-CN/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) — `GHSA-27gw-fw83-xfpp`
 - [50 — GitHub URL 读取器编码路径穿越](advisories/zh-CN/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) — `GHSA-fp7g-2pw8-726f`
 - [51 — Catalog `validate-entity` 本地文件读取](advisories/zh-CN/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) — `GHSA-h8rc-g67j-87x3`
+- [52 — Scaffolder 工作区与容器镜像边界](advisories/zh-CN/52-SPOTIFY-BACKSTAGE-SCAFFOLDER-WORKSPACE-AND-CONTAINER-BOUNDARIES.md) — `NEW-BS-05`
+- [53 — 登录域名与 Azure EasyAuth JWT 边界](advisories/zh-CN/53-SPOTIFY-BACKSTAGE-AUTH-DOMAIN-AND-EASYAUTH-JWT-BOUNDARIES.md) — `NEW-BS-06`
+- [54 — Web API TypeScript SDK 路径参数边界](advisories/zh-CN/54-SPOTIFY-WEB-API-TS-SDK-PATH-PARAMETER-BOUNDARIES.md) — `NEW-SDK-01`
+- [55 — SDK OAuth、PKCE 与会话 token 边界](advisories/zh-CN/55-SPOTIFY-SDK-OAUTH-PKCE-AND-SESSION-TOKEN-BOUNDARIES.md) — `NEW-SDK-02`
 
 <!-- VERCEL-ADVISORIES-END -->

@@ -3,6 +3,7 @@
 [English](../47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [Türkçe](../tr/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | [日本語](../ja/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | **简体中文** | [한국어](../ko/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md)
 
 **VulKill 发现：**在 Spotify/Backstage 审计中发现，并于 2026-11-01 使用真实上游模块进行本地运行测试时观察到该行为。上游公告已于 2026-08-28 发布。
+**VulKill 审计编号：**`NEW-BS-02`。
 **上游：**[`GHSA-rg9r-hr7g-5gc2`](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) · `CVE-2026-106489` · CVSS 3.1 `6.5 Medium` · `CWE-862`。
 
 ## 1. 形成机制

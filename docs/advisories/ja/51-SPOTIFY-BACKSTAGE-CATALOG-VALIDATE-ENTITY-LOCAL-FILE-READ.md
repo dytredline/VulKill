@@ -3,6 +3,7 @@
 [English](../51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | [Türkçe](../tr/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | **日本語** | [简体中文](../zh-CN/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | [한국어](../ko/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md)
 
 **VulKill の発見:** Spotify/Backstage 監査で見つかり、2026-11-01 のローカル実行テストで観測しました。Upstream advisory は 2026-11-18 に公開されました。
+**VulKill audit ID:** `NEW-BS-04`。
 **Upstream:** [`GHSA-h8rc-g67j-87x3`](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) · CVSS 3.1 `6.5 Medium` · `CWE-200` / `CWE-863`。
 
 ## 1. 仕組み

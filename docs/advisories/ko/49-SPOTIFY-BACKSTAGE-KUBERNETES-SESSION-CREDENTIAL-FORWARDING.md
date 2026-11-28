@@ -3,6 +3,7 @@
 [English](../49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | [Türkçe](../tr/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | [日本語](../ja/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | [简体中文](../zh-CN/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | **한국어**
 
 **VulKill 발견:** Spotify/Backstage 감사에서 발견했으며 2026-11-01 로컬 런타임 테스트에서 관찰했습니다. Upstream advisory는 2026-11-18 공개되었습니다.
+**VulKill 감사 ID:** `NEW-BS-01`.
 **Upstream:** [`GHSA-27gw-fw83-xfpp`](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) · CVSS 3.1 `6.4 Medium` · `CWE-200` / `CWE-441`.
 
 ## 1. 발생 방식

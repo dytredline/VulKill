@@ -3,7 +3,10 @@
 [English](../48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | **Türkçe** | [日本語](../ja/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | [简体中文](../zh-CN/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | [한국어](../ko/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md)
 
 **VulKill bulgusu:** Spotify/Backstage denetiminde bulundu ve 2026-11-01 tarihinde gerçek Kubernetes router/fetcher akışında yerel çalışma zamanı testlerinde gözlendi. Üst akış duyurusu 2026-08-28 tarihinde yayımlanmıştı.
+**Kubernetes kısmının VulKill denetim kimliği:** `NEW-BS-07B`.
 **Üst akış:** [`GHSA-p795-mqf2-36mf`](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) · `CVE-2026-106561` · CVSS 3.1 `5.0 Medium` · `CWE-200`.
+
+Yukarıdaki üst akış GHSA'sı yalnız bu kaydın Kubernetes gizli veri ifşası kısmını kapsar. Aşağıdaki ayrı GitHub Events önbellek gözlemi, ilişkili bir VulKill denetim gözlemidir ve bu GHSA'nın parçası olarak sunulmaz.
 
 ## 1. Kod Kusurunun Güvenlik Açığına Dönüşmesi
 
@@ -30,6 +33,23 @@ BENIGN:  hassas olmayan kaynak metadatası kullanılabilir kalır
 - Harness SHA-256: `d6acd23d33238a8dda450ca77e744f008094e415f80f4efdc39cb9a71071a9a8`
 - Ortak runtime log SHA-256: `86cec273f9c154713aa8b9afb4283ad4b65422466adc12fff4710484512af0de`
 
-## 4. Savunma
+## 4. İlişkili VulKill Gözlemi: GitHub Events İmza Öncesi Negatif Önbellek (`NEW-BS-07A`)
+
+Test edilen GitHub Events yolunda `createAppIdResolver`, webhook HMAC imzasını denetlemeden önce kurulum araması yapıyor ve `undefined` sonucunu süre sınırı olmadan önbelleğe alıyordu. Sahte bir istek, imza reddinden önce kurulum kimliği için negatif kayıt oluşturabiliyordu; aynı kimliğin daha sonra doğru imzalanmış webhook'u süreç yeniden başlayana kadar `403` almaya devam ediyordu.
+
+```text
+kontrol: dolu çözücü kaydı bulunan doğru imzalı webhook -> 202
+RED:     sahte webhook -> 403; aynı kimliğin sonraki doğru imzalı webhook'u -> 403
+GREEN:   önce imza denetimi ve undefined için kalıcı kayıt yok -> 202
+BENIGN:  geçerli önbellek kurulum eşlemeleri çalışmayı sürdürür
+```
+
+- Denetim kimliği: `NEW-BS-07A`
+- Harness SHA-256: `51332b3066dd4c845480dbdd72a21acd1067e60831817ec8b595def31afbe048`
+- Çalışma zamanı zinciri SHA-256: `e41bfbbca3329aa88074c3c885234c7ce9ada5a54485296a76d82fd0f3a7b5d5`
+
+## 5. Savunma
 
 `@backstage/plugin-kubernetes-backend 0.21.9` veya daha yeni sürüme geçin; `kubernetes.resources.read` iznini ve servis hesabı RBAC kapsamını daraltın.
+
+GitHub Events için kurulum çözümlemesi veya önbellekleme öncesinde HMAC imzasını denetleyin; `undefined` sonucunu önbelleğe almayın ve negatif önbellek operasyonel olarak gerekiyorsa sınırlı TTL uygulayın.

@@ -3,6 +3,7 @@
 [English](../50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | [Türkçe](../tr/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | [日本語](../ja/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | [简体中文](../zh-CN/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | **한국어**
 
 **VulKill 발견:** Spotify/Backstage 감사에서 발견했으며 2026-11-01 로컬 런타임 테스트에서 관찰했습니다. Upstream advisory는 2026-11-27 공개되었습니다.
+**VulKill 감사 ID:** `NEW-BS-03`.
 **Upstream:** [`GHSA-fp7g-2pw8-726f`](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) · CVSS 3.1 `7.7 High` · `CWE-22` / `CWE-200`.
 
 ## 1. 발생 방식

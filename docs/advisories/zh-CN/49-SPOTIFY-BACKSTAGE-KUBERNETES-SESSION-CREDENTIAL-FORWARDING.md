@@ -3,6 +3,7 @@
 [English](../49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | [Türkçe](../tr/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | [日本語](../ja/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | **简体中文** | [한국어](../ko/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md)
 
 **VulKill 发现：**在 Spotify/Backstage 审计中发现，并于 2026-11-01 的本地运行测试中观察到；上游公告于 2026-11-18 发布。
+**VulKill 审计编号：**`NEW-BS-01`。
 **上游：**[`GHSA-27gw-fw83-xfpp`](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) · CVSS 3.1 `6.4 Medium` · `CWE-200` / `CWE-441`。
 
 ## 1. 形成机制

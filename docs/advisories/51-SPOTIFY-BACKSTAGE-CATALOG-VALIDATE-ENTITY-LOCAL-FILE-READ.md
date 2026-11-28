@@ -3,6 +3,7 @@
 **English** | [Türkçe](tr/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | [日本語](ja/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | [简体中文](zh-CN/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | [한국어](ko/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md)
 
 **VulKill finding:** Found during the Spotify/Backstage audit and observed in local runtime tests on 2026-11-01, before the upstream publication on 2026-11-18.
+**VulKill audit identifier:** `NEW-BS-04`.
 **Upstream:** [`GHSA-h8rc-g67j-87x3`](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) · CVSS 3.1 `6.5 Medium` · `CWE-200` / `CWE-863`.
 
 ## 1. How the Code Defect Becomes a Vulnerability

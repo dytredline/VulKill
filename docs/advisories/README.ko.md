@@ -66,17 +66,21 @@
 
 ---
 
-## VulKill이 찾은 Spotify / Backstage 발견 항목 (47–51)
+## VulKill이 찾은 Spotify / Backstage 발견 항목 (47–55)
 
-이 표는 격리된 로컬 런타임 테스트에서 VulKill이 찾은 Spotify/Backstage 발견 항목 5건을 공개된 업스트림 보안 권고와 연결합니다. 위의 46개 기록과 별도로 나열합니다.
+이 표는 격리 로컬 런타임 테스트에서 VulKill이 찾은 Spotify/Backstage 및 Spotify SDK 발견 항목 9건 전체를 기록합니다. 정확히 대응하는 공개 upstream advisory가 있으면 연결하고, 나머지는 관련 없는 advisory를 지정하지 않고 VulKill audit ID를 유지합니다. 위의 46개 기록과 별도로 나열합니다.
 
-| # | VulKill 발견 항목 | 구성 요소 | 공개 업스트림 보안 권고 |
+| # | VulKill 발견 항목 | 구성 요소 | 공개 upstream advisory / VulKill 기록 |
 | :-: | :--- | :--- | :--- |
-| **47** | [TechDocs 정적 콘텐츠 권한 우회](ko/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) |
-| **48** | [Kubernetes 시크릿 노출](ko/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) |
-| **49** | [Kubernetes 세션 자격 증명 전달](ko/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) |
-| **50** | [GitHub URL 리더 인코딩 경로 순회](ko/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) |
-| **51** | [Catalog `validate-entity` 로컬 파일 읽기](ko/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) |
+| **47** | [TechDocs 정적 콘텐츠 권한 우회](ko/47-SPOTIFY-BACKSTAGE-TECHDOCS-STATIC-AUTHORIZATION-BYPASS.md) | `@backstage/plugin-techdocs-backend` | [GHSA-rg9r-hr7g-5gc2](https://github.com/backstage/backstage/security/advisories/GHSA-rg9r-hr7g-5gc2) + `NEW-BS-02` |
+| **48** | [Kubernetes secret 노출 및 관련 GitHub Events cache](ko/48-SPOTIFY-BACKSTAGE-KUBERNETES-SECRET-DISCLOSURE.md) | `@backstage/plugin-kubernetes-backend`, GitHub Events | [GHSA-p795-mqf2-36mf](https://github.com/backstage/backstage/security/advisories/GHSA-p795-mqf2-36mf) (Kubernetes) + `NEW-BS-07A` / `NEW-BS-07B` |
+| **49** | [Kubernetes 세션 자격 증명 전달](ko/49-SPOTIFY-BACKSTAGE-KUBERNETES-SESSION-CREDENTIAL-FORWARDING.md) | `@backstage/plugin-kubernetes-backend` | [GHSA-27gw-fw83-xfpp](https://github.com/backstage/backstage/security/advisories/GHSA-27gw-fw83-xfpp) + `NEW-BS-01` |
+| **50** | [GitHub URL 리더 인코딩 경로 순회](ko/50-SPOTIFY-BACKSTAGE-GITHUB-URL-READER-ENCODED-TRAVERSAL.md) | `@backstage/integration` | [GHSA-fp7g-2pw8-726f](https://github.com/backstage/backstage/security/advisories/GHSA-fp7g-2pw8-726f) + `NEW-BS-03` |
+| **51** | [Catalog `validate-entity` 로컬 파일 읽기](ko/51-SPOTIFY-BACKSTAGE-CATALOG-VALIDATE-ENTITY-LOCAL-FILE-READ.md) | `@backstage/plugin-catalog-backend` | [GHSA-h8rc-g67j-87x3](https://github.com/backstage/backstage/security/advisories/GHSA-h8rc-g67j-87x3) + `NEW-BS-04` |
+| **52** | [Scaffolder 작업공간 및 container image 경계](ko/52-SPOTIFY-BACKSTAGE-SCAFFOLDER-WORKSPACE-AND-CONTAINER-BOUNDARIES.md) | Backstage Scaffolder | `NEW-BS-05` |
+| **53** | [로그인 domain 및 Azure EasyAuth JWT 경계](ko/53-SPOTIFY-BACKSTAGE-AUTH-DOMAIN-AND-EASYAUTH-JWT-BOUNDARIES.md) | Backstage auth / gateway | `NEW-BS-06` |
+| **54** | [Web API TypeScript SDK path parameter 경계](ko/54-SPOTIFY-WEB-API-TS-SDK-PATH-PARAMETER-BOUNDARIES.md) | `spotify-web-api-ts-sdk` | `NEW-SDK-01` |
+| **55** | [SDK OAuth, PKCE 및 session token 경계](ko/55-SPOTIFY-SDK-OAUTH-PKCE-AND-SESSION-TOKEN-BOUNDARIES.md) | Spotify OSS SDK / examples | `NEW-SDK-02` |
 
 ---
 
